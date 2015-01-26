@@ -1,0 +1,69 @@
+﻿@model IPagedList<Image>
+@using DyyshWebApplication.Controllers
+@using Microsoft.AspNet.Identity
+@using PagedList
+@using PagedList.Mvc
+
+@{if (Model.TotalItemCount == 0)
+{
+    <div class="well well-lg">
+        <p class="text-warning text-emptygallery">- GALLERY IS EMPTY -</p>
+    </div>
+    @*<div class="alert alert-dismissable alert-warning" style="width:500px">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong>Gallery is empty.</strong> Upload something first.
+    </div>*@
+}
+else
+{
+if (ViewBag.ShowTips)
+{ 
+<div id="alertTips" class="alert alert-dismissable alert-info gallery-alert">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong>Tips:</strong> 
+    <ul>
+        <li>To delete items, press "Select" button and select unwanted files. Then Press "Delete" or "Cancel".</li>
+        <li>To select multiple items, use mouse drag or ctrl-click.</li>
+    </ul>
+</div>
+}
+<div class="button-container">
+    <div class="btn-group btn-group-lg">
+        <input id="selectBtn" type="button" class="btn btn-default" value="Select" />
+        <input id="deleteBtn" type="button" class="btn btn-warning" value="Delete" />
+    </div>
+    <strong class="text-usedspaceinfo">@Html.GetUsedSpaceInfo(User.Identity.GetUserId())</strong>
+    <input id="showtipsBtn" type="button" class="btn btn-link btn-lg pull-right" value="Show Tips"/>
+</div>
+    
+<div class="img-thumbnail" id="selectable-container">
+    @{Html.RenderPartial("_Images", Model);}
+</div>
+}
+
+}
+
+@*<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".bs-example-modal-sm">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>*@
+

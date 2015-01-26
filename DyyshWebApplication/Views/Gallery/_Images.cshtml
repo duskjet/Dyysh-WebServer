@@ -1,0 +1,33 @@
+﻿@model IPagedList<Image>
+@using PagedList
+@using PagedList.Mvc
+
+<div id="gallery">
+
+    <div id="pagedList" class="paginator" data-img-target="#gallery">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.ClassicPlusFirstAndLast)
+    </div>
+
+    <div id=image-container>
+        @foreach (var image in Model)
+        {
+            <div class="fl" data-value="@image.Id" data-filesize="@image.FileSize">
+                <a href="@Url.Content(UrlConvert.ToString(image.Id))">
+                    <div class="outer-element">
+                        <div class="inner-element">
+                            <img src="@Url.Content(image.ThumbnailPath)" />
+                        </div>
+                        <div class="filesize-text">@Html.FormatFileSize(image.FileSize)</div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+
+    <div id="pagedList" class="paginator" data-img-target="#gallery" style="clear:both">
+        <br>@Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptions.ClassicPlusFirstAndLast)
+    </div>
+</div>
+
+
+

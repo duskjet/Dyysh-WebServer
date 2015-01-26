@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="/Scripts/jquery-2.1.1.js"></script>
+
+<div class="jumbotron">
+    <h1>Dyysh</h1>
+    <p class="lead">App that shares desktop images with anyone. Currently in Alpha. <a href="@Url.Action("About","Home")">More info.</a></p>
+    <p><a href="@Url.Content("~/Client/dyysh-setup.exe")" class="btn btn-primary btn-lg">Download latest alpha build</a></p>
+</div>
+
+<div class="row">
+    <h3>How to use</h3>
+    <ol>
+        <li><a href="@Url.Action("Register", "Account")">Register</a> an account</li>
+        <li><a href="@Url.Content("~/Client/dyysh-setup.exe")">Download</a> desktop app</li>
+        <li>Synchronize app with your account (You will be prompted to do it)</li>
+        <li>Access features by clicking the icon in tray menu</li>
+    </ol>
+    <h3>Features</h3>
+    <h6>Existing</h6>
+    <ul>
+        <li>Capture and publish desktop area</li>
+        <li>Publish files and content from clipboard</li>
+        <li>Access your file gallery from desktop or website</li>
+    </ul>
+    <h6>Upcoming</h6>
+    <ul>
+        <li>Basic image editing</li>
+        <li>Upload non-image files</li>
+        <li>Upload from website</li>
+        <li>Anonymous uploads</li>
+    </ul>
+</div>
+
