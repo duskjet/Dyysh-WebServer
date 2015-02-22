@@ -12,7 +12,8 @@ namespace DyyshWebApplication
             "~/Scripts/jquery-{version}.js",
             "~/Scripts/jquery.unobtrusive-ajax.js",
             "~/Scripts/jquery.cookie.js",
-            "~/Scripts/gallery.js"));
+            "~/Scripts/gallery.js",
+            "~/Scripts/gallery-img-resizing.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jquery-ui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
