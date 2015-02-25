@@ -41,16 +41,6 @@ namespace DyyshWebApplication.Controllers
             var decryptedGuid = serverRsa.Decrypt(guidBytes, true);
             var userGuid = Encoding.Unicode.GetString(decryptedGuid);
 
-            // FOR TESTING
-            try { 
-                //var usermanager2 = HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>(); 
-                var _currentcontext = HttpContext.Current;
-                var _owincontext = _currentcontext.GetOwinContext();
-                var _usermanager = _owincontext.Get<ApplicationUserManager>();
-            }
-            catch (Exception e) { }
-            // FOR TESTING
-
             // Identify the user by GUID
             var usermanager = HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var user = await usermanager.FindByIdAsync(userGuid);
