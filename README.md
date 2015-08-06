@@ -4,6 +4,7 @@ Dyysh is an application to publish images to the web from PC.
 
 ##### This is server side portion of Dyysh
 ASP.NET MVC 5 application to manage uploads from PC clients and to view/delete uploaded images.
+Check desktop clientside WPF application https://github.com/duskjet/Dyysh-DesktopApp
 
 
 ##### Key Features (relative to Controllers)
