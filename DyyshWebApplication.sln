@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DyyshWebApplication", "DyyshWebApplication\DyyshWebApplication.csproj", "{AD47DD5D-3755-48C2-B54E-A78FFA78D6F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DyyshUnitTestProject", "..\DyyshUnitTestProject\DyyshUnitTestProject.csproj", "{9E3D08F1-920B-471D-912D-9BB379FA1F03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD47DD5D-3755-48C2-B54E-A78FFA78D6F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD47DD5D-3755-48C2-B54E-A78FFA78D6F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD47DD5D-3755-48C2-B54E-A78FFA78D6F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD47DD5D-3755-48C2-B54E-A78FFA78D6F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3D08F1-920B-471D-912D-9BB379FA1F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3D08F1-920B-471D-912D-9BB379FA1F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3D08F1-920B-471D-912D-9BB379FA1F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3D08F1-920B-471D-912D-9BB379FA1F03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

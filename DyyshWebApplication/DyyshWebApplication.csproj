@@ -268,9 +268,14 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Client\dyysh-setup_v1.0.msi" />
+    <Content Include="asp.net-ivan_belikov.pdf" />
     <None Include="Properties\PublishProfiles\clip.apael.com - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %283%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Properties\PublishProfiles\local-iis-webdepoy.pubxml" />
     <None Include="Properties\PublishProfiles\local-iis.pubxml" />
+    <None Include="Properties\PublishProfiles\Package.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\gallery-img-resizing.js" />
     <Content Include="Scripts\gallery.js" />
